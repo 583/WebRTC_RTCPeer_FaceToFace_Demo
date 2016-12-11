@@ -19,7 +19,7 @@ loginButton.addEventListener('click', function(){
 });
 
 
-var connection = new WebSocket('ws://live-server.5556.info:8888');
+var connection = new WebSocket('ws://'+document.domain+':8888');
 connection.onopen = function(){
 	console.log('Connected.');
 };
